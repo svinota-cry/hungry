@@ -301,6 +301,7 @@ export function Profile() {
             type="file"
             accept="application/json,.json"
             className="sr-only"
+            aria-label="Загрузить JSON с данными"
             onChange={(e) => {
               const file = e.target.files?.[0];
               if (file) void doImport(file);

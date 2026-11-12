@@ -90,7 +90,7 @@ export function Shell({
         </button>
       </header>
 
-      <div className="main" id="main" tabIndex={-1}>
+      <main className="main" id="main" tabIndex={-1}>
         <div className="main__inner" key={route}>
           {children}
         </div>
@@ -99,7 +99,7 @@ export function Shell({
           HUNGRY — не медицинский сервис. Если еда перестала быть едой, поговори с живым человеком.
           <span className="footnote__meta">{meta.index} / 07</span>
         </footer>
-      </div>
+      </main>
 
       <nav className="bottomnav" aria-label="Основная навигация">
         {MOBILE_ROUTES.map((id) => {
