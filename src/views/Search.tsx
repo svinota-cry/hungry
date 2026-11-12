@@ -179,7 +179,7 @@ export function Search() {
                 {food.tags.map((t) => <Tag key={t} tag={t} />)}
                 {food.custom ? <span className="tag tag--custom">своё</span> : null}
               </div>
-              <h3 className="foodcard__name">{food.name}</h3>
+              <h2 className="foodcard__name">{food.name}</h2>
               <p className="foodcard__kcal">
                 <span className="num">{fmt(food.kcal)}</span>
                 <span>ккал / 100 г</span>
