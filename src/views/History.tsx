@@ -118,7 +118,7 @@ export function History() {
             </span>
           </div>
 
-          <div className="heat__grid" role="grid" aria-label={`Календарь за ${monthTitle(cursor.y, cursor.m)}`}>
+          <div className="heat__grid" role="group" aria-label={`Календарь за ${monthTitle(cursor.y, cursor.m)}`}>
             {WEEK.map((w) => (
               <span className="heat__weekday" key={w}>{w}</span>
             ))}

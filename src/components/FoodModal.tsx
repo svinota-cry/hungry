@@ -213,7 +213,7 @@ export function FoodModal({
             ))}
           </div>
 
-          <div className="foodpick__list" role="list">
+          <div className="foodpick__list" role="group" aria-label="Продукты">
             {list.length === 0 ? (
               <div className="foodpick__empty">
                 <span className="empty__mark" aria-hidden="true">○</span>
@@ -229,7 +229,6 @@ export function FoodModal({
                   type="button"
                   className="foodrow"
                   onClick={() => choose(food)}
-                  role="listitem"
                 >
                   <span className="foodrow__main">
                     <span className="foodrow__name">{food.name}</span>
