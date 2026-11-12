@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07050a" />
+    <title>HUNGRY — дневник питания</title>
+    <script>
+      // HUNGRY uses hash routing, so any unknown path can safely return
+      // to the app root without a server rewrite rule. Works both for
+      // user.github.io/repo/ and for a custom domain at the root.
+      var parts = location.pathname.split("/");
+      var base = parts.length > 2 ? "/" + parts[1] + "/" : "/";
+      location.replace(base + location.hash);
+    </script>
+    <style>
+      html, body { margin: 0; background: #07050a; color: #ece3da; font-family: monospace; }
+      body { display: grid; min-height: 100vh; place-items: center; text-align: center; }
+      a { color: #ff2e74; }
+    </style>
+  </head>
+  <body>
+    <p>Возвращаемся в HUNGRY… <a href="./">если не вернулось — нажми</a></p>
+  </body>
+</html>
