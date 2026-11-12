@@ -61,7 +61,7 @@ export function History() {
   const notes = state.notes.filter((n) => n.date === selected);
 
   const isCurrentMonth =
-    cursor.y === new Date().getFullYear() && cursor.m === new Date().getMonth();
+    cursor.y === Number(today.slice(0, 4)) && cursor.m === Number(today.slice(5, 7)) - 1;
 
   function shiftMonth(delta: number) {
     const d = new Date(cursor.y, cursor.m + delta, 1);
